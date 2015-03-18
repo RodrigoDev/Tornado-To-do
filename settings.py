@@ -8,3 +8,6 @@ define("debug", default=False, help="debug mode")
 tornado.options.parse_command_line()
 
 settings = {}
+settings['debug'] = options.debug
+settings['mongo.host'] = 'localhost'
+settings['mongo.port'] = 27017

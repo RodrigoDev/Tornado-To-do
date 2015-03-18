@@ -7,6 +7,7 @@ from tornado.options import options
 
 from settings import settings
 from urls import url_patterns
+from db import connection
 
 class Application(tornado.web.Application):
     def __init__(self):
